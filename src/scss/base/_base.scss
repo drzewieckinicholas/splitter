@@ -1,0 +1,16 @@
+@use '../abstracts/colors';
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background: map-get(colors.$colors, 'gray', '900');
+    color: map-get(colors.$colors, 'gray', '50');
+}

@@ -1,0 +1,8 @@
+@use '../abstracts/colors';
+
+.calculator {
+    background: map-get(colors.$colors, 'gray', '800');
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
