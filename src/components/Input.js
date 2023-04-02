@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Input({className, id, min, onChange, placeholder, type, value}) {
+function Input({ariaLabel, className, id, min, onChange, placeholder, type, value}) {
 	return (
 		<input
+			aria-label={ariaLabel}
 			className={className}
 			id={id}
 			min={min}
@@ -20,6 +21,7 @@ Input.defaultProps = {
 };
 
 Input.propTypes = {
+	ariaLabel: PropTypes.string.isRequired,
 	className: PropTypes.string,
 	id: PropTypes.string.isRequired,
 	min: PropTypes.number.isRequired,

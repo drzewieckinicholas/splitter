@@ -1,8 +1,8 @@
 import {createSelector, createSlice} from '@reduxjs/toolkit';
 
 const initialState = {
-	billAmount: 100,
-	tipPercentage: 0.2,
+	billAmount: 0,
+	tipPercentage: 0,
 	numberOfPeople: 1,
 };
 

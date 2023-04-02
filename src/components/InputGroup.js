@@ -4,6 +4,7 @@ import Input from './Input';
 import Label from './Label';
 
 function InputGroup({
+	ariaLabel,
 	className,
 	id,
 	label,
@@ -17,6 +18,7 @@ function InputGroup({
 		<div className={className}>
 			<Label htmlFor={id}>{label}</Label>
 			<Input
+				ariaLabel={ariaLabel}
 				id={id}
 				min={min}
 				onChange={onChange}
@@ -33,6 +35,7 @@ InputGroup.defaultProps = {
 };
 
 InputGroup.propTypes = {
+	ariaLabel: PropTypes.string.isRequired,
 	className: PropTypes.string,
 	id: PropTypes.string.isRequired,
 	label: PropTypes.string.isRequired,

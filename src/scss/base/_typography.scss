@@ -1,6 +1,7 @@
 @use '../abstracts/fonts';
 
 body {
+    line-height: 1.5;
     font-family: fonts.$font-family;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

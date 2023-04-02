@@ -19,28 +19,31 @@ function Controls() {
 	return (
 		<div className='controls'>
 			<InputGroup
+				ariaLabel='Enter bill amount'
 				id='bill-amount'
 				label='Bill Amount'
 				placeholder='Enter bill amount'
 				type='number'
-				min={1}
+				min={0}
 				onChange={e =>
 					dispatch(setBillAmount(e.target.value ? parseFloat(e.target.value) : ''))
 				}
 				value={billAmount}
 			/>
 			<InputGroup
+				ariaLabel='Enter tip percentage'
 				id='tip-percentage'
 				label='Tip Percentage'
 				placeholder='Enter tip percentage'
 				type='number'
-				min={5}
+				min={0}
 				onChange={e =>
 					dispatch(setTipPercentage(e.target.value ? parseFloat(e.target.value) : ''))
 				}
 				value={tipPercentage}
 			/>
 			<InputGroup
+				ariaLabel='Enter number of people to split the bill with'
 				id='number-of-people'
 				label='Number of People'
 				placeholder='Enter number of people'

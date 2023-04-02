@@ -19,6 +19,7 @@ function Results() {
 			<ResultsGroup title='Total Per Person' value={totalPerPerson} />
 			<div>
 				<Button
+					ariaLabel='Reset calculator'
 					className='button button__error'
 					onClick={() => dispatch(reset())}
 				>Reset</Button>

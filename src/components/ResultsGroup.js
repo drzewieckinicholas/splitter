@@ -7,7 +7,7 @@ function ResultsGroup({title, value}) {
 	return (
 		<div className='results__group'>
 			<div className='results__title'>{title}</div>
-			<div className='results__value'>💳 {displayValue}</div>
+			<div className='results__value'>$ {displayValue}</div>
 		</div>
 	);
 }
