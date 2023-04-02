@@ -11,6 +11,28 @@ html {
 }
 
 body {
-    background: map-get(colors.$colors, 'gray', '900');
+    background: map-get(colors.$colors, 'gray', '800');
     color: map-get(colors.$colors, 'gray', '50');
+    margin: 0;
+}
+
+input {
+    border: none;
+    outline: none;
+    padding: 0;
+}
+
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+textarea,
+button,
+select {
+    font: inherit;
 }

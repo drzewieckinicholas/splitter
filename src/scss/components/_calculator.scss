@@ -1,7 +1,8 @@
 @use '../abstracts/colors';
 
 .calculator {
-    background: map-get(colors.$colors, 'gray', '800');
+    background: map-get(colors.$colors, 'gray', '900');
+    border-radius: 2rem;
     display: flex;
     gap: 1rem;
     padding: 1rem;

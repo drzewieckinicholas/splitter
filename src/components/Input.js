@@ -1,15 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Input({id, className, type, min, defaultValue, placeholder}) {
+function Input({className, id, min, onChange, placeholder, type, value}) {
 	return (
 		<input
-			id={id}
 			className={className}
-			type={type}
+			id={id}
 			min={min}
-			defaultValue={defaultValue}
+			onChange={onChange}
 			placeholder={placeholder}
+			type={type}
+			value={value}
 		/>
 	);
 }
@@ -19,12 +20,13 @@ Input.defaultProps = {
 };
 
 Input.propTypes = {
-	id: PropTypes.string.isRequired,
 	className: PropTypes.string,
-	type: PropTypes.string.isRequired,
+	id: PropTypes.string.isRequired,
 	min: PropTypes.number.isRequired,
-	defaultValue: PropTypes.number.isRequired,
+	onChange: PropTypes.func,
 	placeholder: PropTypes.string.isRequired,
+	type: PropTypes.string.isRequired,
+	value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
 };
 
 export default Input;
