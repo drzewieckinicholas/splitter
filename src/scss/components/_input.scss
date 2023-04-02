@@ -2,9 +2,9 @@
 @use '../abstracts/fonts';
 
 .input {
-    background: map-get(colors.$colors, 'gray', '50');
+    background: map-get(colors.$colors, 'gray', '10');
     border-radius: 2rem;
-    color: map-get(colors.$colors, 'gray', '900');
+    color: map-get(colors.$colors, 'gray', '100');
     padding: 0.5rem 1rem;
 }
 

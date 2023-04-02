@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 function ResultsGroup({title, value}) {
 	const displayValue = isNaN(value) ? 0 : value.toFixed(2);
+
 	return (
 		<div className='results__group'>
 			<div className='results__title'>{title}</div>

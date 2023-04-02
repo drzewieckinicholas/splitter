@@ -6,6 +6,7 @@ import {
 	selectTotalPerPerson,
 } from '../features/calculator/calculatorSlice';
 import ResultsGroup from './ResultsGroup';
+import Button from './Button';
 
 function Results() {
 	const dispatch = useDispatch();
@@ -17,9 +18,10 @@ function Results() {
 			<ResultsGroup title='Tip Per Person' value={tipPerPerson} />
 			<ResultsGroup title='Total Per Person' value={totalPerPerson} />
 			<div>
-				<button type='submit' onClick={() => dispatch(reset())}>
-                    Reset
-				</button>
+				<Button
+					className='button button__error'
+					onClick={() => dispatch(reset())}
+				>Reset</Button>
 			</div>
 		</div>
 	);

@@ -11,11 +11,12 @@ html {
 }
 
 body {
-    background: map-get(colors.$colors, 'gray', '800');
-    color: map-get(colors.$colors, 'gray', '50');
+    background: map-get(colors.$colors, 'gray', '90');
+    color: map-get(colors.$colors, 'gray', '10');
     margin: 0;
 }
 
+button,
 input {
     border: none;
     outline: none;

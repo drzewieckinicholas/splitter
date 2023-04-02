@@ -1,0 +1,20 @@
+@use '../abstracts/colors';
+@use '../abstracts/mixins';
+
+.button {
+    @include mixins.button();
+
+    &__error {
+        @include mixins.button__theme(
+            map-get(colors.$colors, 'red', '60'),
+            map-get(colors.$colors, 'gray', '10')
+        );
+    }
+
+    &__success {
+        @include mixins.button__theme(
+            map-get(colors.$colors, 'green', '60'),
+            map-get(colors.$colors, 'gray', '10')
+        );
+    }
+}
